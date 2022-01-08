@@ -27,3 +27,7 @@
 
 ### Rebuild requirements.txt
 * In root directory, Execute `pipenv lock --keep-outdated -d -r > requirements.txt`
+
+### Docker
+* Create image using `sudo docker build -t mydockerimage .`
+* Start using `sudo docker run -d -p 9797:9797 mydockerimage`
