@@ -5,14 +5,16 @@ name = "pypi"
 
 [scripts] 
 server = "python main.py"
+"worker_server" = "gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind localhost:9797"
 
 [packages]
 fastapi = "*"
 pydantic = "*"
 pipenv = "*"
-uvicorn = "*"
+uvicorn = {extras = ["standard"], version = "*"}
 asyncio = "*"
 fastapi-utils = "*"
+gunicorn = "*"
 
 [dev-packages]
 
