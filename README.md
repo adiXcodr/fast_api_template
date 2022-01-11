@@ -29,5 +29,5 @@
 * In root directory, Execute `pipenv lock --keep-outdated -d -r > requirements.txt`
 
 ### Docker
-* Create image using `sudo docker build -t mydockerimage .`
-* Start using `sudo docker run -d -p 9797:9797 mydockerimage`
+* Create image using `sudo docker build -t fast_api_template .`
+* Start using `sudo docker run --name fast_api_template_container -p 9797:9797 fast_api_template`

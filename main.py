@@ -50,5 +50,4 @@ async def app_startup():
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host=SERVER_HOST, port=9797,
-                log_level="info", reload=True)
+    pass
